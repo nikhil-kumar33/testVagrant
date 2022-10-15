@@ -28,7 +28,7 @@ public class TestCompare1 {
 	@BeforeMethod
 	public void initializeDriver() throws FileNotFoundException, IOException {
 		System.setProperty("webdriver.chrome.driver",
-				System.getProperty("user.dir") + "\\src\\test\\resources\\chromedriver.exe");
+				System.getProperty("user.dir") + "\\src\\test\\resources\\drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		properties.load(
